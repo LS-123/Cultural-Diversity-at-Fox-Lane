@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+html * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color:#EAE7DC;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+header {
+	width: 100%;
+	top: 0px;
+	padding-bottom: 2em;
+	position:fixed;
+	text-align: center;
+}
+section{
+	background-color:#D1D5C6;	
+}
+.hero{
+	text-align: center;
+	padding: 4em 2em 4em 2em;
+	margin: 7em 2em 5em 2em;
+	
+}
+
+.intro{
+	padding: 6em;
+	margin: 7em 2em 5em 2em;
+	}
+footer{
+	margin: 50px auto 30px auto;
+	background-color:#EAE7DC;	
+	border: 3px solid #E85A4F;
+	width: 90%;
+	padding: 30px;
+	text-align: center;
+	}
+h1 {
+	color: #000;
+	font-size: 5em;
+}
+
+/*contact form stuff*/
+
+/*Style inputs with type="text", select elements and textareas*/
+input[type=text], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box; /*makes sure the padding and width stays in place*/
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+/*Style the submit button with a specific background color etc.*/
+inut[type=submit]{
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/*When moving the mouse over the submit button, darken it*/
+input[type=submit]:hover{
+	background-color: #45a049;
+}
+/*Add a background color and some padding around the form*/
+.container{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding:20px;
+}
+
+/*header stuff*/
+nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+	overflow: hidden;
+	background-color: #E85A4F; /*nav bar color*/
+}
+li.navigationItem{
+	float: right;
+	border-right: 2px solid #FFF;/*text color in nav*/
+	}
+
+/*li.logo{
+	float:left;
+	padding-top: 6px;
+}
+*/
+li a{
+	display: block;
+	padding: 15px 15px;
+	color:white;
+	text-align: center;
+	text-decoration: none;			
+}
+
+li a:hover:not(.active){
+	background-color: #E98074;	/*hover color*/
+}
+
+.active{
+	background-color: #EFA79F;	/*active color*/
+}
+
+/*map stuff*/
+.mapdiv{
+	margin:auto;
+	display: block;
+	text-align: center;
+}
+
+.mapdiv path {
+	fill: #E85A4F;
+	stroke: #fff;
+	strokewidth:4px;
+	transition: fill 0.3s;
+}
+
+.mapdiv :hover{
+	fill: #E98074;
+}
+
+#AD,
+#AE,
+#AF,
+#AG,
+#AI,
+#AL,
+#AM,
+#AO,
+#AR,
+#AS,
+#AT,
+#AU,
+#AW,
+#AX,
+#AZ,
+#BA,
+#BB,
+#BD,
+#BE,
+#BF,
+#BG,
+#BH,
+#BI,
+#BJ,
+#BL,
+#BN,
+#BO,
+#BM,
+#BQ,
+#BR,
+#BS,
+#BT,
+#BV,
+#BW,
+#BY,
+#BZ,
+#CA,
+#CC,
+#CD,
+#CF,
+#CG,
+#CH,
+#CI,
+#CK,
+#CL,
+#CM,
+#CO,
+#CR,
+#CU,
+#CV,
+#CW,
+#CX,
+#CY,
+#CZ,
+#DE,
+#DJ,
+#DK,
+#DM,
+#DO,
+#DZ,
+#EC,
+#EG,
+#EE,
+#EH,
+#ER,
+#ES,
+#ET,
+#FI,
+#FJ,
+#FK,
+#FM,
+#FO,
+#FR,
+#GA,
+#GB,
+#GE,
+#GD,
+#GF,
+#GG,
+#GH,
+#GI,
+#GL,
+#GM,
+#GN,
+#GO,
+#GP,
+#GQ,
+#GR,
+#GS,
+#GU,
+#GW,
+#GY,
+#HK,
+#HM,
+#HN,
+#HR,
+#HT,
+#HU,
+#ID,
+#IE,
+#IL,
+#IM,
+#IO,
+#IQ,
+#IR,
+#IS,
+#JE,
+#JM,
+#JO,
+#JP,
+#JU,
+#KE,
+#KG,
+#KH,
+#KI,
+#KM,
+#KN,
+#KP,
+#KR,
+#XK,
+#KW,
+#KY,
+#KZ,
+#LA,
+#LB,
+#LC,
+#LI,
+#LK,
+#LR,
+#LS,
+#LT,
+#LU,
+#LV,
+#LY,
+#MA,
+#MC,
+#MD,
+#MG,
+#ME,
+#MF,
+#MH,
+#MK,
+#ML,
+#MO,
+#MM,
+#MN,
+#MP,
+#MQ,
+#MR,
+#MS,
+#MT,
+#MU,
+#MV,
+#MW,
+#MY,
+#MZ,
+#NA,
+#NC,
+#NE,
+#NF,
+#NG,
+#NI,
+#NL,
+#NO,
+#NP,
+#NR,
+#NU,
+#NZ,
+#OM,
+#PA,
+#PE,
+#PF,
+#PG,
+#PH,
+#PK,
+#PL,
+#PM,
+#PN,
+#PR,
+#PS,
+#PT,
+#PW,
+#PY,
+#QA,
+#RE,
+#RO,
+#RS,
+#RU,
+#RW,
+#SA,
+#SB,
+#SC,
+#SD,
+#SG,
+#SH,
+#SI,
+#SJ,
+#SK,
+#SL,
+#SM,
+#SN,
+#SO,
+#SR,
+#SS,
+#ST,
+#SV,
+#SX,
+#SY,
+#SZ,
+#TC,
+#TD,
+#TF,
+#TG,
+#TH,
+#TJ,
+#TK,
+#TL,
+#TM,
+#TN,
+#TO,
+#TR,
+#TT,
+#TV,
+#TW,
+#TZ,
+#UA,
+#UG,
+#UM-DQ,
+#UM-FQ,
+#UM-HQ,
+#UM-JQ,
+#UM-MQ,
+#UM-WQ,
+#US,
+#UY,
+#UZ,
+#VA,
+#VC,
+#VE,
+#VGVI,
+#VN,
+#VU,
+#WF,
+#WS,
+#YE,
+#YT,
+#ZA,
+#ZM,
+#ZW{
+	fill:#888888;
+}
+
+/*website color codes:
+eggshell white: #D1D5C6
+dark vanilla: #D8C3A5
+taupe gray: #8E8D8A
+light red: #E98074
+dark red: #E85A4F
+*/
+
+/*website color codes:
+eggshell white: #D1D5C6
+dark vanilla: #D8C3A5
+taupe gray: #8E8D8A
+light red: #E98074
+dark dred: #E85A4F
+*/
